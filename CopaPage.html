@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copa ETS - EVES</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script type="module" src="js/app.js" defer></script>
+    <script type="module" src="js/leitura.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"></script>
+    <script src="https://code.responsivevoice.org/responsivevoice.js?key=ZSqUix7Q"></script>
+    <link rel="icon" href="images/Logos/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- MENU DE NAVEGAÇÃO! -->
+    <header>
+        <img src="images/Icons/arcoIris.svg" class="imageNav" alt="" srcset="">
+        <nav class="navbar">
+            <div class="container" >
+                <div class="navbar-brand">
+                    <a href="index.html" class="navbar-item" >
+                        <img src="images/Logos/EVES.svg" class="logotipo" alt="EVES Navbar" srcset="">
+                    </a>
+                    <span class="navbar-burger burger" data-target="navMenu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </div>
+            
+
+                <div id="navMenu" class="navbar-menu">
+                    <div class="navbar-end">
+                        <div class="navbar-item menuItem" id="narrarOption2"><label for="cb" id="labelVolume"><img src="images/Icons/volume-preto.svg" id="volumePIcon" alt=""><input type="checkbox" id="cb" name="on"></label></div>                        <a href="index.html" class="navbar-item menuItem">Home</a>
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a href="#" class="navbar-link menuItem">Eventos</a>
+                            <div class="navbar-dropdown">
+                            <a href="#" class="navbar-item" onclick="window.location.href='HackatonPage.html'">Hackathon</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='ETSLand.html'">ETS Land</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='Formatura.html'">Formatura</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='FestaJunina.html'">Festa Junina</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='TCC.html'">TCC</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='CopaPage.html'">Copa ETS</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='SolutionWeek.html'">Solutions<br> Week</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='ConfraETS.html'">ETS Confra</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='PalestraBD.html'">Palestra BD</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='Visitas.html'">Visitas<br> Especiais </a>
+                            </div>
+                        </div>
+                        <a href="QuemSomos.html" class="navbar-item menuItem" >Sobre nós</a>
+                    </div>
+                    <div id="campoPesquisa">
+                        <div id="pesquisando">
+                            <div id="pesquisaBotao"><img src="images/Icons/search.svg"  alt="" srcset=""></div>
+                        </div>
+                        <div class="lista-resultados">
+                            <ul id="lista-resultados"></ul>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        
+        <div class="image is-4by1">
+            <img src="images/Banners/BannerCopaETS.svg" alt="" srcset="">
+        </div>
+    </header>
+
+    <section class="container">
+        <p class="has-text-centered"><img src="images/Logos/CopaETS.svg" class="titlePageImg" alt="" srcset=""></p>
+        <p class="has-text-centered textPage">A Copa ETS, além de ser um empolgante campeonato esportivo, visa criar um ambiente propício para a diversão e a interação entre aprendizes e instrutores. Este evento não apenas estimula a prática de atividades físicas, mas também busca fortalecer os laços de camaradagem e trabalho em equipe, proporcionando a todos participantes uma experiência enriquecedora e memorável.</p>
+
+        <div class="columns is-desktop is-centered m-6  icons-copa">
+            <div class="column is-centered modalidadesContainer">
+                    <p class="has-text-centered title">Principais Modalidades</p>
+                    <div class="modalityIcons">
+                        <div>
+                        <img src="./images/Icons/CopaETS/Futebol.svg">
+                        <img src="./images/Icons/CopaETS/Basquete.svg">
+                        </div>
+                        <div>
+                        <img src="./images/Icons/CopaETS/Volei.svg">
+                        <img src="./images/Icons/CopaETS/Jogos.svg">
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="mostrarEdicoes">
+        <div class="container">
+            <p class="has-text-centered edicaoTitle">Edições anteriores</p>
+            <p class="has-text-centered edicaoSubtitle">Confira os momentos mais marcantes:</p>
+        </div>
+
+        <div class="filtro">
+            <div class="aside-select-holder-text">
+                <p>Filtre a edição:</p>
+            </div>
+            <div class="filtrar">
+                <span>Ano: </span>
+                <div class="select is-rounded">
+                    <select name="year">
+                        <option>2023</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="colored-boxes">
+            <div class='app-layout'>
+                <div class='box-cont' onclick="window.location.href='CopaGaleria.html'" id="box1" style="background-color: #0BAD89;"><p>Copa ETS</br>2023</p></div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- FOOTER -->
+    <footer class="footerContainer" style="background-color: #0BAD89;">
+        <div class="footer-info">
+            <img src="images/Icons/bosch.svg" alt="">
+            <div class="footer-options">
+                <a class="is-size-6" onclick="window.location.href='index.html'">Home</a>
+                <a class="is-size-6" onclick="window.location.href='index.html'">Eventos</a>
+                <a class="is-size-6" onclick="window.location.href='QuemSomos.html'">Sobre nós</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

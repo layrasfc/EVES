@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackaton - EVES</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script type="module" src="js/app.js" defer></script>
+    <script type="module" src="js/leitura.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"></script>
+    <script src="https://code.responsivevoice.org/responsivevoice.js?key=ZSqUix7Q"></script>
+    <link rel="icon" href="images/Logos/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header >
+        <img src="images/Icons/arcoIris.svg" class="imageNav" alt="" srcset="">
+        <nav class="navbar">
+            <div class="container" >
+                <div class="navbar-brand">
+                    <a href="index.html" class="navbar-item" >
+                        <img src="images/Logos/EVES.svg" class="logotipo" alt="EVES Navbar" srcset="">
+                    </a>
+                    <span class="navbar-burger burger" data-target="navMenu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </div>
+            
+
+                <div id="navMenu" class="navbar-menu">
+                    <div class="navbar-end">
+                        <div class="navbar-item menuItem" id="narrarOption2"><label for="cb" id="labelVolume"><img src="images/Icons/volume-preto.svg" id="volumePIcon" alt=""><input type="checkbox" id="cb" name="on"></label></div>
+                        <a href="index.html" class="navbar-item menuItem">Home</a>
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a href="#" class="navbar-link menuItem">Eventos</a>
+                            <div class="navbar-dropdown">
+                            <a href="#" class="navbar-item" onclick="window.location.href='HackatonPage.html'">Hackathon</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='ETSLand.html'">ETS Land</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='Formatura.html'">Formatura</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='FestaJunina.html'">Festa Junina</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='TCC.html'">TCC</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='CopaPage.html'">Copa ETS</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='SolutionWeek.html'">Solutions<br> Week</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='ConfraETS.html'">ETS Confra</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='PalestraBD.html'">Palestra BD</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='Visitas.html'">Visitas<br> Especiais </a>
+                            </div>
+                        </div>
+                        <a href="QuemSomos.html" class="navbar-item menuItem" >Sobre nós</a>
+                    </div>
+                    <div id="campoPesquisa">
+                        <div id="pesquisando">
+                            <div id="pesquisaBotao"><img src="images/Icons/search.svg"  alt="" srcset=""></div>
+                        </div>
+                        <div class="lista-resultados">
+                            <ul id="lista-resultados"></ul>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="lista-resultados"> <ul id="lista-resultados"></ul>  </div>
+    
+        <div class="image is-4by1">
+            <img src="images/Banners/BannerHackaton.svg" alt="" srcset="">
+        </div>
+    </header>
+
+    <!-- FUNDAMENTOS -->
+    <section class="container">
+        <p class="has-text-centered titlePage">Hackaton</p>
+        <p class="has-text-centered textPage">O <b style="color: #ED3237">Hackathon</b> é um evento colaborativo e intensivo, geralmente realizado em um curto período de tempo, onde pessoas se reúnem para trabalhar em projetos de programação, desenvolvimento de software, ou solução de problemas específicos. O nome "hackathon" é um mix de "hack" (no sentido de programar com estilo) com "marathon" (maratona), mostrando que é cheio de energia.</p>
+        
+        <div class="columns is-desktop is-centered m-6">
+            <div class="column infoBox m-4">
+                <div class="boxContent">
+                <p class="boxContent-title has-text-centered" style="color: #ED3237">Participantes</p>
+                <p class="boxContent-text has-text-centered">Os participantes são os alunos que estão concluindo o 1º Semestre dos cursos de Digital Solutions ou Mecatrônica na ETS.</p>
+                </div>
+            </div>
+            <div class="column infoBox m-4">
+                <div class="boxContent">
+                <p class="boxContent-title has-text-centered" style="color: #ED3237">Funcionamento</p>
+                <p class="boxContent-text has-text-centered">
+                    O Hackathon é um evento que ocorre em um curto tempo. Os participantes colaboram em projetos de programação, destacando-se pela apresentação e avaliação das soluções no final. </p>
+                </div>
+            </div>
+            <div class="column infoBox  m-4">
+                <div class="boxContent">
+                <p class="boxContent-title has-text-centered" style="color: #ED3237">Objetivo</p>
+                <p class="boxContent-text has-text-centered">O principal objetivo se trata de uma maratona de conhecimento, aprendizado e integração para os apredizes da ETS.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="mostrarEdicoes">
+        <div class="container">
+            <p class="has-text-centered edicaoTitle">Edições anteriores</p>
+            <p class="has-text-centered edicaoSubtitle">Confira os momentos mais marcantes:</p>
+        </div>
+
+        <div class="filtro">
+            <div class="aside-select-holder-text">
+                <p>Filtre a edição:</p>
+            </div>
+            <div class="filtrar">
+                <span>Ano: </span>
+                <div class="select is-rounded">
+                    <select name="year">
+                        <option>2024</option>
+                        <option>2023</option>
+                        <option>2022</option>
+                        <option>2021</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="colored-boxes">
+            <div class='app-layout'>
+                <div class='box-cont' onclick="window.location.href=''" id="box1" style="background-color: #9F1C20;"><p><b>HACKATON JAN</b></br>2024</p></div>
+                <div class='box-cont' onclick="window.location.href='Hackaton5Ed.html' " id="box2" style="background-color: #ED3237;"><p><b>HACKATON JUN</b></br>2023</p></div>
+                <div class='box-cont' onclick="window.location.href='' " id="box3" style="background-color: #9F1C20;"><p><b>HACKATON JAN</b></br>2023</p></div>
+                <div class='box-cont' onclick="window.location.href='' " id="box4" style="background-color: #ED3237;"><p><b>HACKATON JUN</b></br>2022</p></div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- FOOTER -->
+    <footer class="footerContainer" style="background-color: #9F1C20;">
+        <div class="footer-info">
+            <img src="images/Icons/bosch.svg" alt="">
+            <div class="footer-options">
+                <a class="is-size-6" onclick="window.location.href='index.html'">Home</a>
+                <a class="is-size-6" onclick="window.location.href='index.html'">Eventos</a>
+                <a class="is-size-6" onclick="window.location.href='QuemSomos.html'">Sobre nós</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

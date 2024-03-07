@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVES - Início</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script type="module" src="js/app.js" defer></script>
+    <script type="module" src="js/leitura.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"></script>
+    <script src="https://code.responsivevoice.org/responsivevoice.js?key=ZSqUix7Q"></script>
+    <link rel="icon" href="images/Logos/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    
+    <!-- MENU DE NAVEGAÇÃO! -->
+    <header>
+        <img src="images/Icons/arcoIris.svg" class="imageNav" alt="" srcset="">
+        <nav class="navbar">
+            <div class="container" >
+                <div class="navbar-brand">
+                    <a href="index.html" class="navbar-item" >
+                        <img src="images/Logos/EVES.svg" class="logotipo" alt="EVES Navbar" srcset="">
+                    </a>
+                    <span class="navbar-burger burger" data-target="navMenu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </div>
+            
+
+                <div id="navMenu" class="navbar-menu">
+                    <div class="navbar-end">
+                        <div class="navbar-item menuItem" id="narrarOption2"><label for="cb" id="labelVolume"><img src="images/Icons/volume-preto.svg" id="volumePIcon" alt=""><input type="checkbox" id="cb" name="on"></label></div>
+                        <a href="index.html" class="navbar-item menuItem">Home</a>
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a href="#" class="navbar-link menuItem">Eventos</a>
+                            <div class="navbar-dropdown">
+                            <a href="#" class="navbar-item" onclick="window.location.href='HackatonPage.html'">Hackathon</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='ETSLand.html'">ETS Land</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='Formatura.html'">Formatura</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='FestaJunina.html'">Festa Junina</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='TCC.html'">TCC</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='CopaPage.html'">Copa ETS</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='SolutionWeek.html'">Solutions<br> Week</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='ConfraETS.html'">ETS Confra</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='PalestraBD.html'">Palestra BD</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='Visitas.html'">Visitas<br> Especiais </a>
+                            </div>
+                        </div>
+                        <a href="QuemSomos.html" class="navbar-item menuItem" >Sobre nós</a>
+                    </div>
+                    <div id="campoPesquisa">
+                        <div id="pesquisando">
+                            <div id="pesquisaBotao"><img src="images/Icons/search.svg"  alt="" srcset=""></div>
+                        </div>
+                        <div class="lista-resultados">
+                            <ul id="lista-resultados"></ul>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    
+        <div id="anchor" class="bannerHome">
+                <img src="./images/Banners/BannerHome.svg">
+        </div>
+    </header>
+
+    <!-- FUNDAMENTOS -->
+    <section class="mostrarEdicoes">
+        <div id="anchor1" class="container">
+            <p class="has-text-centered edicaoTitle" style="color: black; margin-bottom: 10px; margin-top: 30px;">Nossos Eventos</p>
+            <p class="has-text-centered textHome" style="margin-bottom: 50px;">Veja todos os principais eventos realizados pela  <b style="color:#36AEA7;">ETS</b></p>
+        </div>
+
+        <div class="colored-boxes" style="margin-bottom: 0px; margin-top: 1%;">
+            <div class='app-layout'>
+                <div class='box-cont' onclick="window.location.href='ETSLand.html'" id="box1" style="background-color: #36AEA7;">
+                    <p>ETS Land</p>
+                </div>
+                <div class='box-cont' onclick="window.location.href='HackatonPage.html'" id="box2" style="background-color: #298C90;">
+                    <p>Hackathon</p>
+                </div>
+                <div class='box-cont' onclick="window.location.href='FestaJunina.html'" id="box3" style="background-color: #36AEA7;">
+                    <p>Festa Junina</p>
+                </div>
+                <div class='box-cont' onclick="window.location.href='TCC.html'" id="box4" style="background-color: #298C90;">
+                    <p>TCC</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="colored-boxes" style="margin-bottom: 0px; margin-top: 1%;">
+            <div class='app-layout'>
+                <div class='box-cont' onclick="window.location.href='CopaPage.html'" id="box5" style="background-color: #298C90;">
+                    <p>Copa ETS</p>
+                </div>
+                <div class='box-cont' onclick="window.location.href='ConfraETS.HTML'"id="box6" style="background-color: #36AEA7;">
+                    <p>ETS Confra</p>
+                </div>
+                <div class='box-cont' onclick="window.location.href='PalestraBD.HTML'" id="box7" style="background-color: #298C90;">
+                    <p>Palestra BD</p>
+                </div>
+                <div class='box-cont' onclick="window.location.href='Visitas.html'" id="box8" style="background-color: #36AEA7;">
+                    <p>Visitas Especiais</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="colored-boxes" style="margin-bottom: 0px; margin-top: 1%;">
+            <div class='app-layout'>
+                    <div class='box-cont' onclick="window.location.href='Formatura.html'" id="box9" style="background-color: #298C90;">
+                        <p>Formatura</p>
+                    </div>
+                    <div class='box-cont' onclick="window.location.href='SolutionWeek.html'"id="box10" style="background-color: #36AEA7;">
+                        <p>Solution Week</p>
+                    </div> 
+                </div>
+               
+            </div>
+        </div>
+    </section>
+    <section class="conhecaETS" style="background-color: #36AEA7;">
+        <div id="anchor2" class="columns is-centered is-desktop ">
+            <div class="column textETS">
+                <p class="has-text-centered titleHome" style="color:whitesmoke";>Conheça a ETS!</p>
+                <p class="has-text-centered textHome" style="color:whitesmoke";>Na ETS cada evento é uma oportunidade unica para criar memórias incríveis!</p>
+                <div class="has-text-centered buttonEves">
+                    <button onclick="window.location.href='QuemSomos.html'">Saiba mais</button>
+                </div>
+                
+            </div>
+            <div class="column">
+                <p class="has-text-centered" >
+                    <img src="./images/Logos/LogoETS.svg" style="width: 60%;" srcset="">
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footerContainer" style="background-color: #298C90;">
+        <div class="footer-info">
+            <img src="images/Icons/bosch.svg" alt="">
+            <div class="footer-options">
+            <a class="is-size-6" onclick="window.location.href='index.html'">Home</a>
+            <a class="is-size-6" onclick="window.location.href='index.html'">Eventos</a>
+            <a class="is-size-6" onclick="window.location.href='QuemSomos.html'">Sobre nós</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

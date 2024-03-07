@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" class="htmlSpecial">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administração - EVES</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script type="module" src="js/app.js" defer></script>
+    <script type="module" src="js/send_mail.js" defer></script>
+    <script type="module" src="js/leitura.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"></script>
+    <script src="https://code.responsivevoice.org/responsivevoice.js?key=ZSqUix7Q"></script>
+    <link rel="icon" href="images/Logos/favicon.ico" type="image/x-icon">
+</head>
+
+<body class="bSpecial">
+    <!-- MENU DE NAVEGAÇÃO! -->
+    <header>
+        <img src="images/Icons/arcoIris.svg" class="imageNav" alt="" srcset="">
+        <nav class="navbar">
+            <div class="container" >
+                <div class="navbar-brand">
+                    <a href="index.html" class="navbar-item" >
+                        <img src="images/Logos/EVES.svg" class="logotipo" alt="EVES Navbar" srcset="">
+                    </a>
+                    <span class="navbar-burger burger" data-target="navMenu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </div>
+            
+
+                <div id="navMenu" class="navbar-menu">
+                    <div class="navbar-end">
+                        <div class="navbar-item menuItem" id="narrarOption2"><label for="cb" id="labelVolume"><img src="images/Icons/volume-preto.svg" id="volumePIcon" alt=""><input type="checkbox" id="cb" name="on"></label></div>
+                        <a href="index.html" class="navbar-item menuItem">Home</a>
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a href="#" class="navbar-link menuItem">Eventos</a>
+                            <div class="navbar-dropdown">
+                            <a href="#" class="navbar-item" onclick="window.location.href='HackatonPage.html'">Hackathon</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='ETSLand.html'">ETS Land</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='Formatura.html'">Formatura</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='FestaJunina.html'">Festa Junina</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='TCC.html'">TCC</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='CopaPage.html'">Copa ETS</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='SolutionWeek.html'">Solutions<br> Week</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='ConfraETS.html'">ETS Confra</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='PalestraBD.html'">Palestra BD</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='Visitas.html'">Visitas<br> Especiais </a>
+                            </div>
+                        </div>
+                        <a href="QuemSomos.html" class="navbar-item menuItem" >Sobre nós</a>
+                    </div>
+                    <div id="campoPesquisa">
+                        <div id="pesquisando">
+                            <div id="pesquisaBotao"><img src="images/Icons/search.svg"  alt="" srcset=""></div>
+                        </div>
+                        <div class="lista-resultados">
+                            <ul id="lista-resultados"></ul>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+    </header>
+
+    <section class="holderLogin">
+        <div id="containerLogin">
+            <p class="has-text-centered"><img src="images/Logos/EVES.svg" alt=""></p>
+        <p class="has-text-centered textPage">Convidar pessoas para o evento</p>
+            <div class="displayFlex" id="displayFlexFormularioPart2">
+                <div class="displayFlex" style="flex-direction: column; gap: 0.7rem; width: 100%; justify-content: start;">
+                    <div class="textAndSomethingUnder">
+                        <span>Evento</span>
+                        <div class="select" id="selectRounded">
+                            <select name="evento" id="rectangleRoundedSelect">
+                                <option value=" disabled selected">Selecione uma opção</option>
+                                <option value="Solution Week">Solution Week</option>
+                                <option value="Hackathon">Hackathon</option>
+                                <option value="TCC">TCC</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="textAndSomethingUnder">
+                        <span>Data</span>
+                        <input id="dataDia" class="input" type="text" placeholder="XX-XX-XXXX">
+                    </div>
+                    <div class="textAndSomethingUnder">
+                        <span>Horário</span>
+                        <input id="horario" class="input" type="text" placeholder="12:00">
+                    </div>
+                </div>
+                <div class="displayFlex" style="flex-direction: column; gap: 0.7rem; width: 100%; justify-content: start; height: 100%;">
+
+                    <div class="textAndSomethingUnder">
+                        <span>Local</span>
+                        <input id="local" class="input" type="text" placeholder="ETS">
+                    </div>
+                    <div class="textAndSomethingUnder">
+                        <span>Email</span>
+                        <textarea id="emails" class="textarea" placeholder='Separe os emails por "," SEM dar espaço.'></textarea>
+                    </div>
+                </div>
+            </div>
+            <p class="control buttonEves">
+                <button id="enviar_email">Enviar</button>
+              </p>
+        </div>
+    </section>
+
+</body>
+
+
+

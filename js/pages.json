@@ -1,0 +1,16 @@
+{
+  "itens": [
+    {"evento": "HACKATHON", "title": "Hackathon", "link": "HackatonPage.html"},
+    {"evento": "ETS LAND", "title": "ETS Land", "link": "ETSLand.html"},
+    {"evento": "TCC", "title": "TCC", "link": "TCC.html"},
+    {"evento": "FESTA JUNINA", "title": "Festa Junina", "link": "FestaJunina.html"},
+    {"evento": "ETS COPA", "title": "ETS Copa", "link": "CopaPage.html"},
+    {"evento": "VISITAS ESPECIAIS", "title": "Visitas especiais", "link": "Visitas.html"},
+    {"evento": "FORMATURA", "title": "Formatura", "link": "Formatura.html"},
+    {"evento": "SOBRE NÓS", "title": "Sobre nós", "link": "QuemSomos.html"},
+    {"evento": "BD PALESTRAS", "title": "BD Palestras", "link": "PalestraBD.html"},
+    {"evento": "ETS CONFRA", "title": "ETS Confra", "link": "ConfraETS.html"},
+    {"evento": "SOLUTION WEEK", "title": "Solution Week", "link": "SolutionWeek.html"}
+
+  ]
+}

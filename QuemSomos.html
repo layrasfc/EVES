@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre nós - EVES</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script type="module" src="js/app.js" defer></script>
+    <script type="module" src="js/leitura.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"></script>
+    <script src="https://code.responsivevoice.org/responsivevoice.js?key=ZSqUix7Q"></script>
+    <link rel="icon" href="images/Logos/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header >
+        <img src="images/Icons/arcoIris.svg" class="imageNav" alt="" srcset="">
+        <nav class="navbar">
+            <div class="container" >
+                <div class="navbar-brand">
+                    <a href="index.html" class="navbar-item" >
+                        <img src="images/Logos/EVES.svg" class="logotipo" alt="EVES Navbar" srcset="">
+                    </a>
+                    <span class="navbar-burger burger" data-target="navMenu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </div>
+            
+
+                <div id="navMenu" class="navbar-menu">
+                    <div class="navbar-end">
+                        <div class="navbar-item menuItem" id="narrarOption2"><label for="cb" id="labelVolume"><img src="images/Icons/volume-preto.svg" id="volumePIcon" alt=""><input type="checkbox" id="cb" name="on"></label></div>
+                        <a href="index.html" class="navbar-item menuItem">Home</a>
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a href="#" class="navbar-link menuItem">Eventos</a>
+                            <div class="navbar-dropdown">
+                            <a href="#" class="navbar-item" onclick="window.location.href='HackatonPage.html'">Hackathon</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='ETSLand.html'">ETS Land</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='Formatura.html'">Formatura</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='FestaJunina.html'">Festa Junina</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='TCC.html'">TCC</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='CopaPage.html'">Copa ETS</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='SolutionWeek.html'">Solutions<br> Week</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='ConfraETS.html'">ETS Confra</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='PalestraBD.html'">Palestra BD</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='Visitas.html'">Visitas<br> Especiais </a>
+                            </div>
+                        </div>
+                        <a href="QuemSomos.html" class="navbar-item menuItem" >Sobre nós</a>
+                    </div>
+                    <div id="campoPesquisa">
+                        <div id="pesquisando">
+                            <div id="pesquisaBotao"><img src="images/Icons/search.svg"  alt="" srcset=""></div>
+                        </div>
+                        <div class="lista-resultados">
+                            <ul id="lista-resultados"></ul>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+    
+        <div class="image is-4by1">
+            <img src="images/Banners/BannerSobreNos.svg" alt="" srcset="">
+        </div>
+    </header>
+
+    <section class="container" style="padding: 40px 40px 40px 40px;">
+        <div>
+            <p class="has-text-centered titlePage" style="color: #36AEA7; font-size: 1.4rem;">O que é a ETS?</p>
+            <p class="has-text-centered textPage">A "ETS" (Engineering Technical School) é uma divisão da Bosch que estabelece parceria com o SENAI Roberto Mange. Dentro desta colaboração, são selecionados aprendizes com idades entre 16 e 18 anos, os quais passam por um programa de treinamento técnico especializado nas áreas de Desenvolvimento de Sistemas, Administração, Mecatrônica e Manufatura Digital.</p>
+        </div>
+        <div class="container" style="margin-top: 60px;" >
+            <p class="edicaoTitle has-text-centered" style="color: #36AEA7; font-size: 1.4rem;">Quem somos nós?</p>
+            <p class="edicaoSubtitle has-text-centered">Nós constituímos um grupo de estudantes de desenvolvimento de sistemas, composto por seis membros provenientes das turmas DS9 e DS10 da ETS Campinas. A formação do grupo teve como propósito a participação na 6ª edição do Hackathon, e o projeto que desenvolvemos foi o EVES, visando centralizar, em um único local, todas as informações e memórias relacionadas aos eventos realizados na ETS.</p>
+        </div>
+    </section>
+
+    <section class="quemSomos" >
+        <p class="edicaoTitle has-text-centered" style="color: #000000; font-size: 1.2rem; padding-top: 25px;">Desenvolvedores do Eves</p>
+        <div class="devContainer">
+            
+            <div class="third">
+                <div class="dev">
+                    <img src="images/Fotos Perfil/Afonso.svg" alt="" srcset="">
+                    <p class="name">Afonso Alves</p>
+                </div>
+                <div class="dev">
+                    <img src="images/Fotos Perfil/Giovanna.svg" alt="" srcset="">
+                    <p class="name">Giovanna Zile</p>
+                </div>
+                <div class="dev">
+                    <img src="images/Fotos Perfil/Laura.svg" alt="" srcset="">
+                    <p class="name">Laura Dias</p>
+                </div>
+            </div>
+
+            <div class="third">
+                <div class="dev">
+                    <img src="images/Fotos Perfil/Layra.svg" alt="" srcset="">
+                    <p class="name">Layra Fernandes</p>
+                </div>
+                <div class="dev">
+                    <img src="images/Fotos Perfil/Lud.svg" alt="" srcset="">
+                    <p class="name">Ludmyla Muniz</p>
+                </div>
+                
+                <div class="dev">
+                    <img src="images/Fotos Perfil/Malu.svg" alt="" srcset="">
+                    <p class="name">Maria Luiza Ramos</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footerContainer" style="background-color: #36AEA7;">
+        <div class="footer-info">
+            <img src="images/Icons/bosch.svg" alt="">
+            <div class="footer-options">
+            <img class="iconAdm"src="./images/Icons/user.svg" onclick="window.location.href='Login.html'" style="width:17px; margin-right: 20px;cursor: pointer;"> 
+            <a class="is-size-6" onclick="window.location.href='index.html'">Home</a>
+            <a class="is-size-6" onclick="window.location.href='index.html'">Eventos</a>
+            <a class="is-size-6" onclick="window.location.href='QuemSomos.html'">Sobre nós</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

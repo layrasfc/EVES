@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palestras BD - EVES</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script type="module" src="js/app.js" defer></script>
+    <script type="module" src="js/leitura.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"></script>
+    <script src="https://code.responsivevoice.org/responsivevoice.js?key=ZSqUix7Q"></script>
+    <link rel="icon" href="images/Logos/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header >
+        <img src="images/Icons/arcoIris.svg" class="imageNav" alt="" srcset="">
+        <nav class="navbar">
+            <div class="container" >
+                <div class="navbar-brand">
+                    <a href="index.html" class="navbar-item" >
+                        <img src="images/Logos/EVES.svg" class="logotipo" alt="EVES Navbar" srcset="">
+                    </a>
+                    <span class="navbar-burger burger" data-target="navMenu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </div>
+            
+
+                <div id="navMenu" class="navbar-menu">
+                    <div class="navbar-end">
+                        <div class="navbar-item menuItem" id="narrarOption2"><label for="cb" id="labelVolume"><img src="images/Icons/volume-preto.svg" id="volumePIcon" alt=""><input type="checkbox" id="cb" name="on"></label></div>
+                        <a href="index.html" class="navbar-item menuItem">Home</a>
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a href="#" class="navbar-link menuItem">Eventos</a>
+                            <div class="navbar-dropdown">
+                            <a href="#" class="navbar-item" onclick="window.location.href='HackatonPage.html'">Hackathon</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='ETSLand.html'">ETS Land</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='Formatura.html'">Formatura</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='FestaJunina.html'">Festa Junina</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='TCC.html'">TCC</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='CopaPage.html'">Copa ETS</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='SolutionWeek.html'">Solutions<br> Week</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='ConfraETS.html'">ETS Confra</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='PalestraBD.html'">Palestra BD</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='Visitas.html'">Visitas<br> Especiais </a>
+                            </div>
+                        </div>
+                        <a href="QuemSomos.html" class="navbar-item menuItem" >Sobre nós</a>
+                    </div>
+                    <div id="campoPesquisa">
+                        <div id="pesquisando">
+                            <div id="pesquisaBotao"><img src="images/Icons/search.svg"  alt="" srcset=""></div>
+                        </div>
+                        <div class="lista-resultados">
+                            <ul id="lista-resultados"></ul>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="image is-4by1">
+            <img src="./images/Banners/BannerPalestra.svg" alt="" srcset="">
+        </div>
+    </header>
+
+    <!-- FUNDAMENTOS -->
+    <section class="container">
+        <p class="has-text-centered titlePage" style="color: #CB34C0;">Palestra Bosch Digital</p>
+        <p class="has-text-centered textPage">Para conhecer o setor que cuida da tecnologia da Bosch, a ETS nos proporciona palestras mensais de várias áreas dentro da BD.</p>
+        
+        <div class="columns is-desktop is-centered m-6">
+            <div class="column infoBox  m-4">
+                <div class="boxContent visitBD">
+                    <p class="boxContent-title has-text-centered titleVisitBD">Gerente de TI</p>
+                    <p class="boxContent-text has-text-centered themeBD">Francine Entringer</p>
+                    <div>
+                        <div class="has-text-centered">
+                        <img src="./images/Palestra BD/Galeria/palestra6.svg">
+                        </div>
+                    <p class="boxContent-text has-text-right dateBD">Data: Junho/2023</p>
+                    </div>
+                    
+
+                </div>
+            </div>
+            <div class="column infoBox m-4">
+                <div class="boxContent visitBD">
+                    <p class="boxContent-title has-text-centered titleVisitBD">Dev Backend</p>
+                    <p class="boxContent-text has-text-centered themeBD">Marcelo Pacheco</p>
+                    <div>
+                    <div class="has-text-centered">
+                        <img src="./images/Palestra BD/Galeria/palestra2.svg">
+                    </div>
+                    <p class="boxContent-text has-text-right dateBD">Data: Julho/2023</p></div>
+                </div>
+            </div>
+
+            <div class="column infoBox m-4">
+                <div class="boxContent visitBD">
+                    <p class="boxContent-title has-text-centered titleVisitBD">Frontend e Backend</p>
+                    <p class="boxContent-text has-text-centered themeBigBD">Geovana Farias, Gabriela Campanha, Danyelly Cirilo e  Milena Silva</p>
+                    <div>
+                    <div class="has-text-centered">
+                        <img src="./images/Palestra BD/Galeria/palestra5.svg">
+                    </div>
+                    <p class="boxContent-text has-text-right dateBD">Data: Agosto/2023</p></div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="columns is-desktop is-centered m-6">
+            <div class="column infoBox  m-4">
+                <div class="boxContent visitBD">
+                    <p class="boxContent-text has-text-centered titleVisitBD">Comunicação em BD </p>
+                    <p class="boxContent-title has-text-centered themeBD">Beatriz Ongaro e Ana Alvez</p>
+                    <div>
+                    <div class="has-text-centered">
+                        <img src="./images/Palestra BD/Galeria/palestra1.svg">
+                    </div>
+                    <p class="boxContent-text has-text-right dateBD">Data: Setembro/2023</p></div>
+                </div>
+            </div>
+            <div class="column infoBox m-4">
+                <div class="boxContent visitBD">
+                    <p class="boxContent-text has-text-centered titleVisitBD">Dev Backend </p>
+                    <p class="boxContent-title has-text-centered themeBD">Daniela Bufalieri e Victor Silva</p>
+                    <div>
+                    <div class="has-text-centered">
+                        <img src="./images/Palestra BD/Galeria/palestra3.svg">
+                    </div>
+                    <p class="boxContent-text has-text-right dateBD">Data: Outubro/2023</p></div>
+                </div>
+            </div>
+            <div class="column infoBox  m-4">
+                <div class="boxContent visitBD">
+                    <p class="boxContent-text has-text-centered titleVisitBD">Infraestrutura </p>
+                    <p class="boxContent-title has-text-centered themeBD">Wesley Oliveira</p>
+
+                    <div>
+                    <div class="has-text-centered">
+                        <img src="./images/Palestra BD/Galeria/palestra4.svg">
+                    </div>
+                    <p class="boxContent-text has-text-right dateBD">Data: Dezembro/2023</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="footerContainer" style="background-color: #CB34C0;">
+        <div class="footer-info">
+            <img src="images/Icons/bosch.svg" alt="">
+            <div class="footer-options">
+                <a class="is-size-6" onclick="window.location.href='index.html'">Home</a>
+                <a class="is-size-6" onclick="window.location.href='index.html'">Eventos</a>
+                <a class="is-size-6" onclick="window.location.href='QuemSomos.html'">Sobre nós</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
+

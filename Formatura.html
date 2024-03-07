@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatura - EVES</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script type="module" src="js/app.js" defer></script>
+    <script type="module" src="js/leitura.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"></script>
+    <script src="https://code.responsivevoice.org/responsivevoice.js?key=ZSqUix7Q"></script>
+    <link rel="icon" href="images/Logos/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    
+    <!-- MENU DE NAVEGAÇÃO! -->
+    <header >
+        <img src="images/Icons/arcoIris.svg" class="imageNav" alt="" srcset="">
+        <nav class="navbar">
+            <div class="container" >
+                <div class="navbar-brand">
+                    <a href="index.html" class="navbar-item" >
+                        <img src="images/Logos/EVES.svg" class="logotipo" alt="EVES Navbar" srcset="">
+                    </a>
+                    <span class="navbar-burger burger" data-target="navMenu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </div>
+            
+
+                <div id="navMenu" class="navbar-menu">
+                    <div class="navbar-end">
+                        <div class="navbar-item menuItem" id="narrarOption2"><label for="cb" id="labelVolume"><img src="images/Icons/volume-preto.svg" id="volumePIcon" alt=""><input type="checkbox" id="cb" name="on"></label></div>                        <a href="index.html" class="navbar-item menuItem">Home</a>
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a href="#" class="navbar-link menuItem">Eventos</a>
+                            <div class="navbar-dropdown">
+                            <a href="#" class="navbar-item" onclick="window.location.href='HackatonPage.html'">Hackathon</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='ETSLand.html'">ETS Land</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='Formatura.html'">Formatura</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='FestaJunina.html'">Festa Junina</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='TCC.html'">TCC</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='CopaPage.html'">Copa ETS</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='SolutionWeek.html'">Solutions<br> Week</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='ConfraETS.html'">ETS Confra</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='PalestraBD.html'">Palestra BD</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='Visitas.html'">Visitas<br> Especiais </a>
+                            </div>
+                        </div>
+                        <a href="QuemSomos.html" class="navbar-item menuItem" >Sobre nós</a>
+                    </div>
+                    <div id="campoPesquisa">
+                        <div id="pesquisando">
+                            <div id="pesquisaBotao"><img src="images/Icons/search.svg"  alt="" srcset=""></div>
+                        </div>
+                        <div class="lista-resultados">
+                            <ul id="lista-resultados"></ul>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+    
+        <div class="image is-4by1">
+            <img src="images/Banners/BannerFormatura.svg" alt="" srcset="">
+        </div>
+    </header>
+
+    <!-- FUNDAMENTOS -->
+    <section class="container" >
+        <p class="has-text-centered titlePage">Formatura ETS</p>
+        <p class="has-text-centered textPage" style="margin-bottom: 80px;">A formatura no SENAI não apenas simboliza o encerramento de um curso, mas representa o término de uma significativa fase na vida dos aprendizes. Este momento marca o ponto final de uma jornada educacional, abrindo as portas para que cada um trilhe o seu próprio caminho e embarque em novos capítulos de crescimento e conquistas.</p>
+
+    </section>
+
+    <section class="mostrarEdicoes">
+        <section class="container">
+            <p class="has-text-centered edicaoTitle">Nossos cursos</p>
+            <p class="has-text-centered edicaoSubtitle">Confira os cursosda ETS:</p>
+        <div class="columns is-desktop is-centered m-6 mostrar">
+            <div class="column infoBox m-4" style="background-color: white;">
+                <div class="boxContent" style="padding: 15px;">
+                <p class="boxContent-title has-text-centered" style="padding-bottom: 12px; color: #888888;">
+                    Desenvolvimento de Sistemas</p>
+                <p class="boxContent-text has-text-centered">O curso técnico de Desenvolvimento de Sistemas oferece uma formação prática e direcionada, capacitando os alunos em programação, desenvolvimento web e mobile.</p>
+                </div>
+            </div>
+            <div class="column infoBox m-4" style="background-color: white;">
+                <div class="boxContent" style="padding: 15px;">
+                <p class="boxContent-title has-text-centered" style="padding-bottom: 12px; color: #888888;">Mecatrônica</p>
+                <p class="boxContent-text has-text-centered">O curso técnico em Mecatrônica oferece uma formação que integra mecânica e eletrônica, preparando os alunos para desenvolver e manter sistemas automatizados.</p>
+                </div>
+            </div>
+            <div class="column infoBox  m-4" style="background-color: white;">
+                <div class="boxContent" style="padding: 15px;">
+                <p class="boxContent-title has-text-centered" style="padding-bottom: 12px; color: #888888;">Administração </p>
+                <p class="boxContent-text has-text-centered">O curso técnico em Administração oferece formação ampla em gestão, preparando alunos para atuar eficientemente em diversas áreas administrativas, com foco prático em conceitos.</p>
+                </div>
+            </div>
+            <div class="column infoBox  m-4" style="background-color: white;">
+                <div class="boxContent" style="padding: 15px;">
+                <p class="boxContent-title has-text-centered" style="padding-bottom: 12px; color: #888888;">Manufatura Digital</p>
+                <p class="boxContent-text has-text-centered">O curso técnico em Manufatura Digital proporciona formação especializada na integração de tecnologias avançadas, como automação, inteligência artificial e análise de dados.</p>
+                </div>
+            </div>
+        </div></section>
+
+    </section>
+
+    
+    <section class="mostrarEdicoes" style="background-color: white;">
+        <div class="container">
+            <p class="has-text-centered edicaoTitle">Edições anteriores</p>
+            <p class="has-text-centered edicaoSubtitle">Confira os momentos mais marcantes:</p>
+        </div>
+
+        <div class="filtro">
+            <div class="aside-select-holder-text">
+                <p>Filtre a edição:</p>
+            </div>
+            <div class="filtrar">
+                <span>Ano: </span>
+                <div class="select is-rounded">
+                    <select name="year">
+                        <option>2023</option>
+                        <option>2022</option>
+                        <option>2021</option>
+                        <option>2020</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="colored-boxes">
+            <div class='app-layout'>
+                <div class='box-cont' onclick="window.location.href='FormaturaGale.html'" id="box1" style="background-color: #65686A;"><p>MECA</br>2023</p></div>
+                <div class='box-cont' onclick="window.location.href='FormaturaGale.html'" id="box2" style="background-color: #3F3F3F;"><p>DS 5</br>2023</p></div>
+                <div class='box-cont' onclick="window.location.href='FormaturaGale.html'" id="box3" style="background-color: #65686A;"><p>MD 2</br>2023</p></div>
+                <div class='box-cont' onclick="window.location.href='FormaturaGale.html'" id="box4" style="background-color:#1E1E1E ;"><p>MD 3</br>2023</p></div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FOOTER -->
+    <footer class="footerContainer" style="background-color: #1E1E1E;">
+        <div class="footer-info">
+            <img src="images/Icons/bosch.svg" alt="">
+            <div class="footer-options">
+                <a class="is-size-6" onclick="window.location.href='index.html'">Home</a>
+                <a class="is-size-6" onclick="window.location.href='index.html'">Eventos</a>
+                <a class="is-size-6" onclick="window.location.href='QuemSomos.html'">Sobre nós</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

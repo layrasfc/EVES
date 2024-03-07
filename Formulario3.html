@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" class="htmlSpecial">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script type="module" src="js/addEvents3.js" defer></script>
+    <script type="module" src="js/app.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+
+<body class="bSpecial">
+
+    <!-- MENU DE NAVEGAÇÃO! -->
+    <header>
+        <img src="images/Icons/arcoIris.svg" class="imageNav" alt="" srcset="">
+        <nav class="navbar">
+            <div class="container" >
+                <div class="navbar-brand">
+                    <a href="index.html" class="navbar-item" >
+                        <img src="images/Logos/EVES.svg" class="logotipo" alt="" srcset="">
+                    </a>
+                    <span class="navbar-burger burger" data-target="navMenu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </div>
+            
+
+                <div id="navMenu" class="navbar-menu">
+                    <div class="navbar-end">
+                        <a href="index.html" class="navbar-item menuItem">Home</a>
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a href="#" class="navbar-link menuItem">Eventos</a>
+                            <div class="navbar-dropdown">
+                            <a href="#" class="navbar-item" onclick="window.location.href='HackatonPage.html'">Hackathon</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='ETSLand.html'">ETS Land</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='Formatura.html'">Formatura</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='FestaJunina.html'">Festa Junina</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='TCC.html'">TCC</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='CopaPage.html'">Copa ETS</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='SolutionWeek.html'">Solutions<br> Week</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='ConfraETS.html'">ETS Confra</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='PalestraBD.html'">Palestra BD</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='Visitas.html'">Visitas<br> Especiais </a>
+                            </div>
+                        </div>
+                        <a href="QuemSomos.html" class="navbar-item menuItem" >Sobre nós</a>
+                    </div>
+                    <div id="campoPesquisa">
+                        <div id="pesquisando">
+                            <div id="pesquisaBotao"><img src="images/Icons/search.svg"  alt="" srcset=""></div>
+                        </div>
+                        <div class="lista-resultados">
+                            <ul id="lista-resultados"></ul>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="holderLogin">
+        <div id="containerLogin">
+            <p class="has-text-centered"><img src="images/Logos/EVES.svg" alt=""></p>
+        <p class="has-text-centered textPage">Insira os dados do 3º colocado na edição: </p>
+            <div class="displayFlex" id="displayFlexFormularioPart2">
+                <div class="displayFlex" style="flex-direction: column; gap: 0.7rem; width: 100%;">
+                    <div class="textAndSomethingUnder">
+                        <span>Nome do grupo:</span>
+                        <input id="nomeGrupo3" class="input" type="text" placeholder="3º">
+                    </div>
+                    <div class="textAndSomethingUnder">
+                        <span>Nome dos participantes:</span>
+                        <input id="nomeParticipantes3" class="input" type="text" placeholder="3º">
+                    </div>
+                    <div class="textAndSomethingUnder">
+                        <span>Descrição do projeto:</span>
+                        <textarea id="descricaoProjeto3" class="textarea" placeholder="Descrição do projeto do 3º colocado"></textarea>
+                    </div>
+                </div>
+                <div class="textAndSomethingUnder">
+                    <span>Imagem do grupo:</span>
+                    <label for="file-upload" class="customFileUpload" id="customFileUpload">
+                        <div class="iconAndImage">
+                        <i class="fa fa-cloud-upload"> <img src="images/Icons/image-square-svgrepo-com.svg" id="imgIcon" style="width: 1rem; margin-top: 0.33rem;"></i> <span id="placeholder">Adicione a imagem do grupo</span>
+                        </div>
+                        <span id="imageName"></span>
+                    </label>
+                    <input id="file-upload" type="file"/>
+                    
+                </div>
+            </div>
+            <p class="control buttonEves">
+                <button id="proximo3">Enviar</button>
+              </p>
+
+            
+
+        </div>
+    </section>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        #overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.7);
+        }
+
+        #modal {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        #closeBtn {
+            cursor: pointer;
+            color: #555;
+            float: right;
+            font-size: 20px;
+        }
+
+        #confirmBtn {
+            margin-top: 30px;
+            margin-bottom: 20px;
+            padding: 8px 16px;
+            background-color: rgb(1, 164, 175);
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+
+        #resumo h2{
+            margin-top: 20px;
+            color: rgb(2, 151, 139);
+            width: 300px;
+            font-weight: 800;
+        }
+
+    </style>
+
+    <!-- Elemento modal e overlay -->
+    <div id="overlay"></div>
+    <div id="modal">
+        <span id="closeBtn" onclick="fecharResumo()">&times;</span>
+        <div id="resumo">
+
+
+        </div>
+        <button id="confirmBtn" onclick="confirmarResumo()">Confirmar</button>
+    </div>
+
+</body>

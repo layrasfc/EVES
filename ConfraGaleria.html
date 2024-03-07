@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confraternização ETS - EVES</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script type="module" src="js/app.js" defer></script>
+    <script type="module" src="js/leitura.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"></script>
+    <script src="https://code.responsivevoice.org/responsivevoice.js?key=ZSqUix7Q"></script>
+    <link rel="icon" href="images/Logos/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- MENU DE NAVEGAÇÃO! -->
+    <header>
+        <img src="images/Icons/arcoIris.svg" class="imageNav" alt="" srcset="">
+        <nav class="navbar">
+            <div class="container" >
+                <div class="navbar-brand">
+                    <a href="index.html" class="navbar-item" >
+                        <img src="images/Logos/EVES.svg" class="logotipo" alt="EVES Navbar" srcset="">
+                    </a>
+                    <span class="navbar-burger burger" data-target="navMenu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </div>
+            
+
+                <div id="navMenu" class="navbar-menu">
+                    <div class="navbar-end">
+                        <div class="navbar-item menuItem" id="narrarOption2"><label for="cb" id="labelVolume"><img src="images/Icons/volume-preto.svg" id="volumePIcon" alt=""><input type="checkbox" id="cb" name="on"></label></div>                        <a href="index.html" class="navbar-item menuItem">Home</a>
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a href="#" class="navbar-link menuItem">Eventos</a>
+                            <div class="navbar-dropdown">
+                            <a href="#" class="navbar-item" onclick="window.location.href='HackatonPage.html'">Hackathon</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='ETSLand.html'">ETS Land</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='Formatura.html'">Formatura</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='FestaJunina.html'">Festa Junina</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='TCC.html'">TCC</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='CopaPage.html'">Copa ETS</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='SolutionWeek.html'">Solutions<br> Week</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='ConfraETS.html'">ETS Confra</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='PalestraBD.html'">Palestra BD</a>
+                            <a href="#" class="navbar-item" onclick="window.location.href='Visitas.html'">Visitas<br> Especiais </a>
+                            </div>
+                        </div>
+                        <a href="QuemSomos.html" class="navbar-item menuItem" >Sobre nós</a>
+                    </div>
+                    <div id="campoPesquisa">
+                        <div id="pesquisando">
+                            <div id="pesquisaBotao"><img src="images/Icons/search.svg"  alt="" srcset=""></div>
+                        </div>
+                        <div class="lista-resultados">
+                            <ul id="lista-resultados"></ul>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- banner da galeria da copa -->
+        <div class="image is-4by1">
+            <img src="images/Banners/BannerConfra.svg" alt="" srcset="">
+        </div>
+    </header>
+
+    <!-- G A L E R I A -->
+    <section class="container">
+        <p class="has-text-centered titlePage">Confraternização ETS 2023</p>
+        <p class="has-text-centered textPage">O tema da festa "Festa Fantasia" foi decidido pelos próprios aprendizes através de votação.</p>
+
+        <div class="galeryContainer">
+            <div class="titleGalery">
+                <p>Galeria</p>
+            </div>
+            
+            <!-- Layout Imagens -->
+            <div class="columns is-multiline is-variable is-1 custom-columns" style="margin-bottom: 0px;">
+                <div class="column is-3">
+                    <div class="square-image">
+                        <a href="images/Confra/Foto1.svg" data-lightbox="gallery" data-title="Descrição da imagem 1">
+                            <img src="images/Confra/Galeria/Foto1.svg" class="lightbox imagGale" alt="Imagem 1">
+                        </a>
+                        <div class="download-container">
+                            <button onclick="downloadImage('images/Confra/Galeria/Foto1.svg', 'Foto1.svg')" class="download-button">
+                                <img class="iconDownload" src="./images/Icons/icondownload.svg" alt="Download Imagem 1">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-3">
+                    <div class="square-image">
+                        <a href="images/Confra/Galeria/Foto2.svg" data-lightbox="gallery" data-title="Descrição da imagem 2">
+                            <img src="images/Confra/Galeria/Foto2.svg" class="lightbox imagGale" alt="Imagem 2">
+                        </a>
+                        <div class="download-container">
+                            <button onclick="downloadImage('images/Confra/Galeria/Foto2.svg', 'Foto2.svg')" class="download-button">
+                                <img class="iconDownload" src="./images/Icons/icondownload.svg" alt="Download Imagem 2">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-3">
+                    <div class="square-image">
+                        <a href="images/Confra/Galeria/Foto3.svg" data-lightbox="gallery" data-title="Descrição da imagem 1">
+                            <img src="images/Confra/Galeria/Foto3.svg" class="lightbox imagGale" alt="Imagem 3">
+                        </a>
+                        <div class="download-container">
+                            <button onclick="downloadImage('images/Confra/Galeria/Foto3.svg', 'Foto3.svg')" class="download-button">
+                                <img class="iconDownload" src="./images/Icons/icondownload.svg" alt="Download Imagem 3">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-3">
+                    <div class="square-image">
+                        <a href="images/Confra/Galeria/Foto4.svg" data-lightbox="gallery" data-title="Descrição da imagem 1">
+                            <img src="images/Confra/Galeria/Foto4.svg" class="lightbox imagGale" alt="Imagem 4">
+                        </a>
+                        <div class="download-container">
+                            <button onclick="downloadImage('images/Confra/Galeria/Foto4.svg', 'Foto4.svg')" class="download-button">
+                                <img class="iconDownload" src="./images/Icons/icondownload.svg" alt="Download Imagem 4">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="columns is-multiline is-variable is-1 custom-columns" style="margin-bottom: 0px;">
+                <div class="column is-3">
+                    <div class="square-image">
+                        <a href="images/Confra/Galeria/Foto5.svg" data-lightbox="gallery" data-title="Descrição da imagem 5">
+                            <img src="images/Confra/Galeria/Foto5.svg" class="lightbox imagGale" alt="Imagem 5">
+                        </a>
+                        <div class="download-container">
+                            <button onclick="downloadImage('images/Confra/Galeria/Foto5.svg', 'Foto5.svg')" class="download-button">
+                                <img class="iconDownload" src="./images/Icons/icondownload.svg" alt="Download Imagem 5">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-3">
+                    <div class="square-image">
+                        <a href="images/Confra/Galeria/Foto6.svg" data-lightbox="gallery" data-title="Descrição da imagem 6">
+                            <img src="images/Confra/Galeria/Foto6.svg" class="lightbox imagGale" alt="Imagem 6">
+                        </a>
+                        <div class="download-container">
+                            <button onclick="downloadImage('images/Confra/Galeria/Foto6.svg', 'Foto6.svg')" class="download-button">
+                                <img class="iconDownload" src="./images/Icons/icondownload.svg" alt="Download Imagem 6">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-3">
+                    <div class="square-image">
+                        <a href="images/Confra/Galeria/Foto7.svg" data-lightbox="gallery" data-title="Descrição da imagem 7">
+                            <img src="images/Confra/Galeria/Foto7.svg" class="lightbox imagGale" alt="Imagem 7">
+                        </a>
+                        <div class="download-container">
+                            <button onclick="downloadImage('images/Confra/Galeria/Foto7.svg', 'Foto7.svg')" class="download-button">
+                                <img class="iconDownload" src="./images/Icons/icondownload.svg" alt="Download Imagem 7">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-3">
+                    <div class="square-image">
+                        <a href="images/Confra/Galeria/Foto8.svg" data-lightbox="gallery" data-title="Descrição da imagem 8">
+                            <img src="images/Confra/Galeria/Foto8.svg" class="lightbox imagGale" alt="Imagem 8">
+                        </a>
+                        <div class="download-container">
+                            <button onclick="downloadImage('images/Confra/Galeria/Foto8.svg', 'Foto8.svg')" class="download-button">
+                                <img class="iconDownload" src="./images/Icons/icondownload.svg" alt="Download Imagem 8">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="columns is-multiline is-variable is-1 custom-columns" style="margin-bottom: 0px;">
+                <div class="column is-3">
+                    <div class="square-image">
+                        <a href="images/Confra/Galeria/Foto9.svg" data-lightbox="gallery" data-title="Descrição da imagem 9">
+                            <img src="images/Confra/Galeria/Foto9.svg" class="lightbox imagGale" alt="Imagem 9">
+                        </a>
+                        <div class="download-container">
+                            <button onclick="downloadImage('images/Confra/Galeria/Foto9.svg', 'Foto9.svg')" class="download-button">
+                                <img class="iconDownload" src="./images/Icons/icondownload.svg" alt="Download Imagem 9">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-3">
+                    <div class="square-image">
+                        <a href="images/Confra/Galeria/Foto10.svg" data-lightbox="gallery" data-title="Descrição da imagem 10">
+                            <img src="images/Confra/Galeria/Foto10.svg" class="lightbox imagGale" alt="Imagem 10">
+                        </a>
+                        <div class="download-container">
+                            <button onclick="downloadImage('images/Confra/Galeria/Foto10.svg', 'Foto10.svg')" class="download-button">
+                                <img class="iconDownload" src="./images/Icons/icondownload.svg" alt="Download Imagem 10">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-3">
+                    <div class="square-image">
+                        <a href="images/Confra/Galeria/Foto11.svg" data-lightbox="gallery" data-title="Descrição da imagem 11">
+                            <img src="images/Confra/Galeria/Foto11.svg" class="lightbox imagGale" alt="Imagem 11">
+                        </a>
+                        <div class="download-container">
+                            <button onclick="downloadImage('images/Confra/Galeria/Foto11.svg', 'Foto11.svg')" class="download-button">
+                                <img class="iconDownload" src="./images/Icons/icondownload.svg" alt="Download Imagem 11">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-3">
+                    <div class="square-image">
+                        <a href="images/Confra/Galeria/Foto12.svg" data-lightbox="gallery" data-title="Descrição da imagem 12">
+                            <img src="images/Confra/Galeria/Foto12.svg" class="lightbox imagGale" alt="Imagem 12">
+                        </a>
+                        <div class="download-container">
+                            <button onclick="downloadImage('images/Confra/Galeria/Foto12.svg', 'Foto12.svg')" class="download-button">
+                                <img class="iconDownload" src="./images/Icons/icondownload.svg" alt="Download Imagem 12">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footerContainer" style="background-color: #36AEA7;">
+        <div class="footer-info">
+            <img src="images/Icons/bosch.svg" alt="">
+            <div class="footer-options">
+                <a class="is-size-6" onclick="window.location.href='index.html'">Home</a>
+                <a class="is-size-6" onclick="window.location.href='index.html'">Eventos</a>
+                <a class="is-size-6" onclick="window.location.href='QuemSomos.html'">Sobre nós</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+<script>
+    function downloadImage(imageSrc, imageName) {
+        var link = document.createElement('a');
+        link.href = imageSrc;
+        link.download = imageName;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
+</script>
+
